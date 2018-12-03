@@ -83,7 +83,7 @@
     <Compile Include="Services\Interfaces\ISearchService.cs" />
     <Compile Include="Services\Interfaces\ISortService.cs" />
     <Compile Include="Services\Models\Filter.cs" />
-    <Compile Include="Services\Models\GroupBy.cs" />
+    <Compile Include="Services\Models\Sort.cs" />
     <Compile Include="Services\Helper.cs" />
     <Compile Include="Services\Models\SortOperators.cs" />
     <Compile Include="Services\OperatorParsers\Interfaces\IOperatorParser.cs" />
@@ -97,7 +97,7 @@
     <Compile Include="Services\SearchService.cs" />
     <Compile Include="Services\Models\FilterOperators.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Projections\DocumentViewModelToDocumentEntity.cs" />
+    <Compile Include="Projections\DocumentEntityToDocumentViewModelProjectionMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SortService.cs" />
   </ItemGroup>

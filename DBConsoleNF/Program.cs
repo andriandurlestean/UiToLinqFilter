@@ -20,7 +20,7 @@ namespace DBConsoleNF
             var request = helper.GenerateQueryRequest();
             ISearchService searchService = new SearchService();
             ISortService sortService = new SortService();
-            IProjectionMapper<DocumentInfo, DocumentInfoViewModel> projection = new DocumentViewModelToDocumentEntity();
+            IProjectionMapper<DocumentInfo, DocumentInfoViewModel> projection = new DocumentToViewModelProjectionMapper();
             var predicateBuilder = PredicateBuilder.New<DocumentInfoViewModel>();
 
             var dt = DateTime.UtcNow.AddMonths(-6);

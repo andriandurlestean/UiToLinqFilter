@@ -5,7 +5,7 @@ using DBConsoleNF.Projections.Interfaces;
 
 namespace DBConsoleNF.Projections
 {
-    public class DocumentViewModelToDocumentEntity : IProjectionMapper<DocumentInfo, DocumentInfoViewModel>
+    public class DocumentToViewModelProjectionMapper : IProjectionMapper<DocumentInfo, DocumentInfoViewModel>
     {
         public Expression<Func<DocumentInfo, DocumentInfoViewModel>> Map()
         {
